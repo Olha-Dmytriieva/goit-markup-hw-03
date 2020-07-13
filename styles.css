@@ -1,3 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+
+*
+*::before,
+*::after{
+    box-sizing: inherit;
+}
 
 :root{
     --background-color:#fff;
@@ -8,7 +17,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--background-color);
+    background-color: var(--background-color);  
+ }
+
+.container{
+    width: 1200px;
+    padding-left:15px;
+    padding-right:15px;
+    margin: 0 auto;
 }
 /*logo*/
 
@@ -41,6 +57,9 @@ header a {
     letter-spacing: 0.02em;
 }
 
+.header{
+    outline: auto;
+}
  .navigation-items {
     list-style-type: none;
  }
@@ -52,6 +71,10 @@ header a {
 
 .navigation-items a {
     color:var(--header-color);
+}
+
+.navigation-items{
+    display: flex;
 }
 
 .contact-info :hover,
@@ -70,6 +93,9 @@ header a {
     line-height: 1.5;
     /*color:#ffffff*/
     letter-spacing: 0.06em;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    text-align: center;
 }
 
 
@@ -97,6 +123,8 @@ header a {
     text-transform: uppercase;
     color: var(--header-color);
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .our-benefits .our-benefits-description{
@@ -105,6 +133,8 @@ header a {
     line-height: 1.71;
     color: var(--subheader-color);
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 94px;
 }
 
 /*чем мы занимаемся*/
@@ -116,6 +146,9 @@ header a {
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .what-we-are-doing-list{
     font-weight: bold;
@@ -129,6 +162,12 @@ header a {
 .our-team-section li{
     list-style-type: none;
 }
+
+.our-team-section-header{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
 .our-team-section{
     background-color: #F5F4FA;
 }
@@ -138,6 +177,8 @@ header a {
     line-height: 19px;
     color: var(--header-color);
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .our-team-position{
     font-weight: normal;
@@ -145,6 +186,8 @@ header a {
     line-height: 1.18;
     color: var(--subheader-color);
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 16px;
 }
 .our-team-social-links :hover,
 .our-team-social-links :focus{
@@ -161,13 +204,15 @@ header a {
     color: var(--accent-color);
 }
 
-
 .our-clients-header{
     font-weight: bold;
     font-size: 36px;
     line-height: 1.67x;
     color: var(--header-color);
     letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .our-clients-list li{
