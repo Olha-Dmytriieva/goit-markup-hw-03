@@ -1,0 +1,269 @@
+
+:root{
+    --background-color:#fff;
+    --accent-color: #2196F3;
+    --header-color: #212121;
+    --subheader-color: #757575;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+/*logo*/
+
+.first-part-of-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.47;
+    color: var(--accent-color);
+    letter-spacing: 0.03em;
+    
+}
+.second-part-of-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.47px;
+    color: black;
+    letter-spacing: 0.03em;   
+}
+
+/*header without logo*/
+header a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+ .navigation-items {
+    list-style-type: none;
+ }
+
+.navigation-items .link:hover,
+.navigation-items .link:focus{
+    color: var(--accent-color);
+}
+
+.navigation-items a {
+    color:var(--header-color);
+}
+
+.contact-info :hover,
+.contact-info :focus{ 
+    color: var(--accent-color);
+}
+
+.contact-info a{
+    color:var(--subheader-color)
+}
+
+/*hero section*/
+.hero-section-header{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    /*color:#ffffff*/
+    letter-spacing: 0.06em;
+}
+
+
+.hero-section-button:hover{
+    background-color: var(--accent-color);
+    color:#fff ;
+}
+
+.hero-section-button{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.80;
+}
+
+
+/*Наши преимущества*/
+.our-benefits li{
+    list-style-type: none;
+}
+
+ .our-benefits .our-benefits-header{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+}
+
+.our-benefits .our-benefits-description{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--subheader-color);
+    letter-spacing: 0.03em;
+}
+
+/*чем мы занимаемся*/
+.what-we-are-doing li{
+    list-style-type: none;
+}
+.what-we-are-doing-header{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+.what-we-are-doing-list{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    /*color: #fff;*/
+}
+
+/*our team*/
+.our-team-section li{
+    list-style-type: none;
+}
+.our-team-section{
+    background-color: #F5F4FA;
+}
+.our-team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+}
+.our-team-position{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--subheader-color);
+    letter-spacing: 0.03em;
+}
+.our-team-social-links :hover,
+.our-team-social-links :focus{
+    color: var(--accent-color);
+}
+
+.team-links{
+    text-decoration: none;
+}
+
+/*наши постоянные клиенты*/
+.our-clients-list .link:hover,
+.our-clients-list .link:focus{
+    color: var(--accent-color);
+}
+
+
+.our-clients-header{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.67x;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+}
+
+.our-clients-list li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.client-logo:hover{
+color: var(--accent-color);
+}
+/*подвал*/
+
+.footer a{
+    text-decoration: none;
+}
+.footer{
+    background-color: #2F303A;
+}
+.footer .second-part-of-logo{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.47px;
+    color:#fff;
+    letter-spacing: 0.03em;
+}
+
+.footer-items{
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 0.03em;
+ 
+}
+.footer-address{
+    color: #fff;
+    font-style:normal;
+    letter-spacing: 0.03em;
+   
+}
+
+.footer-contact{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7; 
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.03em;
+}
+
+.join-us .link:hover,
+.join-us .link:focus{
+    color: var(--accent-color);
+}
+
+.join-us{
+    text-decoration: none;
+    list-style-type: none;
+}
+.join-us-header{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.03em;
+}
+
+/*portfolio page*/
+.gallery-items{
+    text-decoration: none;
+    list-style-type: none;
+}
+ .filter-btn:hover{
+     color: #fff;
+    background-color: var(--accent-color)
+}
+
+.portfolio-list{
+    list-style-type: none;
+}
+
+.portfolio-list-header{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--header-color);
+    letter-spacing: 0.03em;
+}
+.portfolio-list-description{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--subheader-color);
+    letter-spacing: 0.03em;
+}
+
+
+/*text-decoration: none;
+    list-style-type: none;*/
