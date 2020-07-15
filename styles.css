@@ -1,12 +1,17 @@
 html{
     box-sizing: border-box;
+
 }
 
 *
 *::before,
 *::after{
     box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
 }
+
+
 
 :root{
     --background-color:#fff;
@@ -27,6 +32,13 @@ body {
     margin: 0 auto;
 }
 /*logo*/
+
+
+.logo-link{
+    margin-right: 85px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .first-part-of-logo{
     font-family: Raleway;
@@ -58,11 +70,41 @@ header a {
 }
 
 .header{
-    outline: auto;
+    display: flex;
+    align-content: baseline;
+    
 }
+
+.navigation-pannel{
+    display: inline-flex;
+    align-content: baseline;
+    
+ }
+
  .navigation-items {
     list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
  }
+ 
+
+ .navigation-items .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+
+}
+
+.navigation-items :not(:last-child){
+    margin-right: 50px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: baseline;
+}
 
 .navigation-items .link:hover,
 .navigation-items .link:focus{
@@ -84,9 +126,33 @@ header a {
 
 .contact-info a{
     color:var(--subheader-color)
+
+}
+
+
+.contact-info .contact{
+    margin-right: 30px;  
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    
+
+}
+
+.contact-info .contact:first-child{
+    margin-left: 305px;
+}
+
+.contact-info .contact:last-child{
+    margin-right: 0px;
 }
 
 /*hero section*/
+
+.hero-section{
+    padding-bottom: 250px;
+}
+
+
 .hero-section-header{
     font-weight: 900;
     font-size: 44px;
@@ -94,7 +160,7 @@ header a {
     /*color:#ffffff*/
     letter-spacing: 0.06em;
     margin-top: 0px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
