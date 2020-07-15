@@ -15,19 +15,19 @@
     <!---шапкa-->
 <header class="header">
     <div class="flex-container">
-        <nav class="navigation-pannel">
-            <a href="#" class="logo-link"> <Span class="first-part-of-logo">Web</Span><span class="second-part-of-logo">Studio</span> </a>
-            <ul class="navigation-items">
-                <li class="navigation"> <a href="./index.html" class="link">Студия</a></li>
-                <li class="navigation"> <a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li class="navigation"> <a href="#" class="link" >Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="contact-info flex-container">
-            <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
-            <a href="tel:+380961111111" class="contact">+380961111111</a>
-        </div>
-</div>
+            <nav class="navigation-pannel">
+                <a href="#" class="logo-link"> <Span class="first-part-of-logo">Web</Span><span class="second-part-of-logo">Studio</span> </a>
+                <ul class="navigation-items">
+                    <li class="navigation"> <a href="./index.html" class="link">Студия</a></li>
+                    <li class="navigation"> <a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="navigation"> <a href="#" class="link" >Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info flex-container">
+                <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="contact">+380961111111</a>
+            </div>
+    </div>
 </header>
 <main>
 <!---hero-->
@@ -35,62 +35,64 @@
         <h1 class="hero-section-header">Эффективные решения для <br> Вашего бизнеса</h1>
         <button type=“button” class="hero-section-button">Заказать услугу</button>
     </section>
-    <section class="our-benefits">
+<section class="our-benefits">
         <!---Этот заголовок нужно будет скрыть позднее-->
             <h2 hidden>Наши преимущества</h2>
         <!---Этот заголовок нужно будет скрыть позднее-->
-        <ul>
-        <Li>
+    <ul class="flex-container our-benefits-list">
+        <Li class="our-benefits-item">
             <img src="./our-benefits/img1.svg" alt="иллюстрация1">
             <h3  class="our-benefits-header">Внимание к деталям</h3>
             <p  class="our-benefits-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </Li>
 
-        <Li>
+        <Li class="our-benefits-item">
             <img src="./our-benefits/img2.svg" alt="иллюстрация2">
             <h3 class="our-benefits-header">Пунктуальность</h3>
             <p class="our-benefits-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </Li>
 
-        <Li>
+        <Li class="our-benefits-item">
             <img src="./our-benefits/img3.svg" alt="иллюстрация3">
             <h3 class="our-benefits-header">Планирование</h3>
             <p class="our-benefits-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </Li>
-        <Li>
+        <Li class="our-benefits-item">
             <img src="./our-benefits/img4.svg" alt="иллюстрация4">
             <h3 class="our-benefits-header">Современные технологии</h3>
             <p class="our-benefits-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </Li>
     </ul>
 
-    </section>
+</section>
 <!---Чем мы занимаемся-->
     <section class="what-we-are-doing">
         <h2 class="what-we-are-doing-header">Чем мы занимаемся</h2>
-        <ul>
-            <li>
-                <P class="what-we-are-doing-list">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</P>
-                <img src="./what-we-are-doing-pic/img.svg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" width="370" height="294">
+        <ul class="flex-container what-we-are-doing-example">
 
+            <li class="what-we-are-doing-item">
+                <img src="./what-we-are-doing-pic/img.svg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ" width="370" height="294">
+                <P class="what-we-are-doing-list">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</P>
             </li> 
-            <li>
-                <P class="what-we-are-doing-list">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</P>
+
+            <li  class="what-we-are-doing-item">
                 <img src="./what-we-are-doing-pic/img1.svg" alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ" width="370" height="294">
-            </li> 
-            <li>
-                <P class="what-we-are-doing-list">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</P>
+                <P class="what-we-are-doing-list">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</P>
+            </li>
+
+            <li class="what-we-are-doing-item">
                 <img src="./what-we-are-doing-pic/img2.svg" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ" width="370" height="294">
+                <P class="what-we-are-doing-list">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</P>
             </li> 
         </ul>
-
     </section>
     <!---Наша команда-->
+    <div class="wrapper">
     <section class="our-team-section">
     
         <h2 class="our-team-section-header">Наша команда</h2>
-        <ul>
-            <li>
+        <ul class="flex-container our-team-list" >
+            <li class="our-team-member">
                 <img src="./team/teammember1.jpg" alt="Николай Кучеренко" width="270" height="260">
                 <h3 class="our-team-name">Николай Кучеренко</h3>
                 <p class="our-team-position">  Product Designer</p>
@@ -101,7 +103,7 @@
                     <li><a href="" aria-label="Иконка линкедина" class=team-links></a></li>
                 </ul>
             </li>
-            <li>
+            <li class="our-team-member">
                 <img src="./team/teammember2.jpg" alt="Ольга Иванова" width="270" height="260">
                 <h3 class="our-team-name">Ольга Иванова</h3>
                 <p class="our-team-position">  Frontend Developer</p>
@@ -113,7 +115,7 @@
                 </ul>
                 
             </li>
-            <li>
+            <li class="our-team-member">
                 <img src="./team/teammember3.jpg" alt="Андрей Шевченко" width="270" height="260">
                 <h3 class="our-team-name">Андрей Шевченко</h3>
                 <p class="our-team-position">  Marketing</p>
@@ -124,7 +126,7 @@
                     <li><a href="" aria-label="Иконка линкедина" class=team-links></a></li>
                 </ul>
             </li>
-            <li><img src="./team/teammember4.jpg" alt="Иван Николаев" width="270" height="260">
+            <li class="our-team-member"><img src="./team/teammember4.jpg" alt="Иван Николаев" width="270" height="260">
                 <h3 class="our-team-name">Иван Николаев</h3>
                 <p class="our-team-position">  UI Designer</p>
                 <ul class="our-team-social-links">
@@ -136,32 +138,33 @@
             </li>
         </ul>
     </section>
+    </div>
 
 <!---добавить логотипы партнеров через css-->
             <section class="our-clients-section">
                 <h2 class="our-clients-header">Постоянные клиенты</h2>
-                <ul class="our-clients-list">
-                    <li>
+                <ul class="our-clients-list flex-container">
+                    <li class="client-picture">
                         <img src="./clients/Client1.svg" alt="Клиент1" class="client-logo">
                         <a href="#"  class="link"></a>
                     </li>
-                    <li>
+                    <li class="client-picture">
                         <img src="./clients/Client2.svg" alt="Клиент2" class="client-logo">
                         <a href="#" class="link"></a>
                     </li>
-                    <li>
+                    <li class="client-picture">
                         <img src="./clients/Client3.svg" alt="Клиент3" class="client-logo">
                         <a href="#" class="link"></a>
                     </li>
-                    <li>
+                    <li class="client-picture">
                         <img src="./clients/Client4.svg" alt="Клиент4" class="client-logo">
                         <a href="#"  class="link"></a>
                     </li>
-                    <li>
+                    <li class="client-picture">
                         <img src="./clients/Client5.svg" alt="Клиент5" class="client-logo">
                         <a href="#" class="link"></a>
                     </li>
-                    <li>
+                    <li class="client-picture">
                         <img src="./clients/Client6.svg" alt="Клиент6" class="client-logo">
                         <a href="#" class="link"></a>
                     </li>
