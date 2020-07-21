@@ -69,16 +69,15 @@ header a {
     letter-spacing: 0.02em;
 }
 
-.header{
-    display: flex;
-    align-content: baseline;
-    
-}
 
 .navigation-pannel{
     display: inline-flex;
 
-    
+ }
+
+ .header .flex-container{
+    display: inline-flex;
+    align-content: baseline;
  }
 
  .navigation-items {
@@ -150,19 +149,36 @@ header a {
 .hero-section{
     padding-bottom: 250px;
     padding-top: 200px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+ 
+    
 }
 
 
 .hero-section-header{
+   
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+
+    
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.5;
-    /*color:#ffffff*/
-    letter-spacing: 0.06em;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    line-height: 60px;
+    /* or 136% */
+    
     text-align: center;
-}
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+   }
 
 
 .hero-section-button:hover{
@@ -171,12 +187,20 @@ header a {
 }
 
 .hero-section-button{
+    display: inline-block;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.80;
     display: inline-flex;
     justify-content: center;
-    margin-left:  550px;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 
@@ -190,8 +214,10 @@ header a {
     list-style-type: none;
 }
 
-.our-benefits-item{
+.our-benefits{
+    padding-bottom: 94px;
 }
+
 .our-benefits-header{
     font-weight: bold;
     font-size: 14px;
@@ -210,7 +236,7 @@ header a {
     color: var(--subheader-color);
     letter-spacing: 0.03em;
     margin-top: 0px;
-    margin-bottom: 94px;
+   
     width: 270px;
 }
 
@@ -226,7 +252,7 @@ header a {
 .our-benefits> .flex-container {
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 94px;
+    
 }
 
 /*чем мы занимаемся*/
@@ -235,7 +261,7 @@ header a {
 }
 
 .what-we-are-doing{
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     
 }
 
@@ -258,7 +284,7 @@ header a {
 .what-we-are-doing>.flex-container{
     padding-left: 0px;
     margin-top: 0px;
-    margin-bottom: 94px;
+   
 }
 
 .what-we-are-doing-list{
@@ -288,12 +314,13 @@ header a {
 .our-team-section{
     background-color: #F5F4FA;
     background-size: 100%;
+    padding-bottom: 94px;
 }
 
 .our-team-list {
     padding-left: 0px;
     margin-top: 0;
-    margin-bottom: 94px;
+    
 }
 
 .our-team-list .our-team-member:not(:last-child){
@@ -334,6 +361,10 @@ header a {
     color: var(--accent-color);
 }
 
+.our-clients-section{
+    padding-bottom: 94px;
+}
+
 .our-clients-list{
     padding-left: 0;
 }
@@ -347,12 +378,10 @@ header a {
 }
 
 .our-clients-list .client-picture:last-child{
-margin-right: 0;
+    margin-right: 0;
 }
 
-.our-clients-list{
-    margin-bottom: 94px;
-}
+
 .our-clients-header{
     font-weight: bold;
     font-size: 36px;
@@ -370,7 +399,7 @@ margin-right: 0;
     list-style-type: none;
 }
 .client-logo:hover{
-color: var(--accent-color);
+    color: var(--accent-color);
 }
 /*подвал*/
 
@@ -478,19 +507,41 @@ color: var(--accent-color);
     justify-content: center;
     
     padding-left: 0;
-    margin-top: 93px;
-    margin-bottom: 54px;
-}
-
-.gallery-items .btn-list:not(:last-child){
-    margin-right: 8px;
+    padding-top: 93px;
+    padding-bottom: 54px;
 }
 
 
- .filter-btn:hover{
-     color: #fff;
+
+
+.btn-list{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 128px;
+    height: 38px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+
+    .gallery-items .button-portfolio:not(:last-child){
+        margin-right: 8px;
+    }
+
+.btn-list:hover{
+    color: #fff;
     background-color: var(--accent-color)
 }
+
+
 
 .portfolio-list{
     list-style-type: none;
